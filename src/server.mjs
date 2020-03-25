@@ -15,7 +15,7 @@ const io = socketIO(server);
 const port_num = 5000;
 
 app.set('port', port_num);
-app.use('/', express.static('./'));
+app.use('/src', express.static('./src'));
 
 // Routing
 app.get('/', function (request, response) {
